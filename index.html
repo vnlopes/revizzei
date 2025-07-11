@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revzzei - Home</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte Sora -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+    }
+
+ .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #6900f2;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .05em;
+      animation:
+        typing 2.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #6900f2; }
+    }
+  </style>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2e8e66d26.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/images/icon.ico" />
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+
+  <!-- Header -->
+  <header class="bg-[#6900f2] text-white p-4 flex flex-col gap-4 items-center">
+    <div class="flex items-center gap-2">
+      <img class="w-[125px]" src="/images/logo-revizzei.webp" alt="Logo Revzzei">
+    </div>
+
+    <!-- Campo de Busca -->
+    <div class="relative w-full max-w-md">
+      <input 
+        type="text" 
+        placeholder="O que você está buscando?" 
+        id="buscaInput"
+        class="w-full p-3 text-black border rounded-md shadow-md bg-white pr-10" />
+      <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#bfbfbf" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+      </span>
+    </div>
+  </header>
+
+  <!-- Texto Explicativo -->
+  <section class="text-center px-4 pt-10 pb-6 max-w-3xl mx-auto">
+    <div class="typewriter max-w-fit">
+      <h2 class="text-4xl md:text-6xl font-bold text-[#6900f2] mb-4">Olá estudante!</h2>
+    </div>
+    <p class="text-gray-700 text-base leading-relaxed">
+      Escolha abaixo qual formulário você deseja preencher, referente à quantidade de <b>Flashcards Revizzei</b> do seu pedido (30, 50 ou 100 cards). <br><br>
+      Se você tiver que preencher dois ou mais formulários (um de 50 e um de 100, por exemplo), <b>faça isso separadamente</b>, ok?
+    </p>
+  </section>
+
+  <hr class="w-[40%] self-center m-12" />
+
+  <!-- Cards -->
+  <main class="flex-grow bg-white flex justify-center">
+        <section id="cards" class="flex gap-4 overflow-x-auto px-4 py-6 max-w-full">
+      <!-- Card 30 -->
+      <a href="formulario30.html" class="card-item flex items-center bg-[#C1FE0E] p-4 rounded-md max-h-[170px] gap-4 min-w-[280px] shadow hover:brightness-95 transition-all">
+        <div class="p-4 bg-[#a6d90f] rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#333232" viewBox="0 0 256 256"><path d="M200,32H163.74a47.92,47.92,0,0,0-71.48,0H56A16,16,0,0,0,40,48V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V48A16,16,0,0,0,200,32Zm-72,0a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm72,184H56V48H82.75A47.93,47.93,0,0,0,80,64v8a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V64a47.93,47.93,0,0,0-2.75-16H200Z"></path></svg>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-[#333232]">Formulário - 30 Cards</h2>
+          <p class="text-sm text-gray-800">Acesse o formulário para personalizar seus cards.</p>
+        </div>
+      </a>
+
+      <!-- Card 50 -->
+      <a href="formulario50.html" class="card-item flex items-center bg-[#C1FE0E] p-4 rounded-md max-h-[170px] gap-4 min-w-[280px] shadow hover:brightness-95 transition-all">
+        <div class="p-4 bg-[#a6d90f] rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#333232" viewBox="0 0 256 256"><path d="M200,32H163.74a47.92,47.92,0,0,0-71.48,0H56A16,16,0,0,0,40,48V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V48A16,16,0,0,0,200,32Zm-72,0a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm72,184H56V48H82.75A47.93,47.93,0,0,0,80,64v8a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V64a47.93,47.93,0,0,0-2.75-16H200Z"></path></svg>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-[#333232]">Formulário - 50 Cards</h2>
+          <p class="text-sm text-gray-800">Acesse o formulário para personalizar seus cards.</p>
+        </div>
+      </a>
+
+      <!-- Card 100 -->
+      <a href="formulario100.html" class="card-item flex items-center bg-[#C1FE0E] p-4 rounded-md max-h-[170px] gap-4 min-w-[280px] shadow hover:brightness-95 transition-all">
+        <div class="p-4 bg-[#a6d90f] rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#333232" viewBox="0 0 256 256"><path d="M200,32H163.74a47.92,47.92,0,0,0-71.48,0H56A16,16,0,0,0,40,48V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V48A16,16,0,0,0,200,32Zm-72,0a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm72,184H56V48H82.75A47.93,47.93,0,0,0,80,64v8a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V64a47.93,47.93,0,0,0-2.75-16H200Z"></path></svg>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-[#333232]">Formulário - 100 Cards</h2>
+          <p class="text-sm text-gray-800">Acesse o formulário para personalizar seus cards.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <!-- Newsletter -->
+  <footer class="bg-gray-800 text-white text-center p-6">
+    <h3 class="text-2xl font-bold">Newsletter</h3>
+    <p class="text-sm mt-2">Copyright Revizzei - 2025. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS Busca -->
+  <script>
+    const buscaInput = document.getElementById('buscaInput');
+    const cards = document.querySelectorAll('.card-item');
+
+    buscaInput.addEventListener('input', function () {
+      const termo = this.value.toLowerCase();
+      cards.forEach(card => {
+        const texto = card.textContent.toLowerCase();
+        card.style.display = texto.includes(termo) ? 'flex' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
