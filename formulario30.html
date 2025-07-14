@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>30Cards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="/images/icon.ico" />
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+
+  <div id="header"></div>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+
+  <main class="flex-grow flex justify-center">
+     <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSe7mfShZXhaR92DmntSfMRMDZxsV2QvrrlWyDtfFXfeno8XUw/viewform?embedded=true"
+    style="width: 640px; height: 100vh; border: none;"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+  >
+    Carregando…
+  </iframe>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
